@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 #define LOWER 1
 #define UPPER 2
 
@@ -36,7 +38,7 @@
                         bindings = <
    &kp TAB    &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                      &kp N6       &kp N7       &kp N8          &kp N9       &kp N0       &kp MINUS
    &trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET    &kp AMPS     &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp EQUAL
-   &trans     &trans     &trans     &trans    &trans    &trans                      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR  
+   &rgb_ug RGB_TOG &rgb_ug RGB_COLOR_HSB(128,100,100) &bl BL_TOG &bl BL_SET 50 &trans &trans                      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR  
                                             &trans  &trans  &trans                      &trans  &trans  &trans
                         >;
                 };
