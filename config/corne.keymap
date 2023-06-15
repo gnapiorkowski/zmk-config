@@ -12,6 +12,7 @@
 #define LOWER 1
 #define UPPER 2
 
+
 / {
         keymap {
                 compatible = "zmk,keymap";
